@@ -1,10 +1,10 @@
 import csv
 import random
 
-# Define fields
+
 fields = ["ID", "Age", "Salary", "Score", "Rating"]
 
-# Generate 10 random employee records
+
 records = []
 for emp_id in range(1, 11):
     record = {
@@ -16,7 +16,7 @@ for emp_id in range(1, 11):
     }
     records.append(record)
 
-# Write records into a CSV file
+
 filename = "employee_data.csv"
 with open(filename, "w", newline="") as file:
     writer = csv.DictWriter(file, fieldnames=fields)
